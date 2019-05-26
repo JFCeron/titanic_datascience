@@ -20,10 +20,15 @@ setup(
         'pypandoc>=1.4',
         'pytest>=4.5.0',
         'pytest-runner>=5.1',
+        'click>=7.0',
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
     ],
+    entry_points='''
+        [console_scripts]
+        titanic_analysis=titanic.command_line:titanic_analysis
+    ''',
     setup_requires=['pytest-runner'],
     tests_require=['pytest'],
     # Substitute <github_account> with the name of your GitHub account
