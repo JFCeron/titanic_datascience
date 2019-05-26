@@ -17,7 +17,7 @@ setup(
     description='Analysis of the Titanic dataset',
     long_description=readme(),
     install_requires=[
-        'pypandoc>=1.4',
+        'pypandoc>=1.02',
         'pytest>=4.5.0',
         'pytest-runner>=5.1',
         'click>=7.0',
