@@ -16,10 +16,16 @@ setup(
     version='0.1',
     description='Analysis of the Titanic dataset',
     long_description=readme(),
-    install_requires=['pypandoc>=1.4'],
+    install_requires=[
+        'pypandoc>=1.4',
+        'pytest>=4.5.0',
+        'pytest-runner>=5.1',
+    ],
     classifiers=[
         'Programming Language :: Python :: 3',
     ],
+    setup_requires=['pytest-runner'],
+    tests_require=['pytest'],
     # Substitute <github_account> with the name of your GitHub account
     url='https://github.com/JFCeronLacuna/titanic_datascience',
     author='Juan F. Ceron',  # Substitute your name
